@@ -64,8 +64,8 @@ def users_view():
     return [
         {
             'user_id': i,
-            'name': additional_data[str(i)]["name"],
-            'avatar': additional_data[str(i)]["url"],
+            'name': additional_data[str(i)]['name'],
+            'avatar': additional_data[str(i)]['url'],
         }
         for i in data.keys() if str(i) in additional_data
     ]
